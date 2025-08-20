@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Lapor Ketidakhadiran Secara Mandiri</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header dengan teks pemerintah -->
+        <header class="header">
+            <p class="government-text">Pemerintah Provinsi Kepulauan Bangka Belitung</p>
+            <h1 class="main-title">APLIKASI LAPOR KETIDAKHADIRAN SECARA MANDIRI</h1>
+            <p class="app-description">
+                Aplikasi ini digunakan untuk melaporkan ketidakhadiran pegawai di kantor secara mandiri dan untuk melihat data laporan ketidakhadiran pegawai Dinas Kearsipan dan Perpustakaan Provinsi Kepulauan Bangka Belitung
+            </p>
+        </header>
+
+        <!-- Menu Utama -->
+        <main class="main-content">
+            <!-- Menu Pertama: Form Input Ketidakhadiran -->
+            <div class="menu-section">
+                <div class="menu-header" onclick="toggleSubmenu('form-menu')">
+                    <h2>Form Input Ketidakhadiran di Kantor</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="submenu" id="form-menu">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScKm_Y_qeAnfopazx4kMRsHpcVCYgN384aOV96YZeghiZOKvw/viewform?usp=sharing&ouid=113615802769571798148" target="_blank" class="submenu-item">
+                        Bawahan Langsung Kepala Dinas
+                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSesiUUwzNyUI7EujjtzZxgNhIuBUtiraQuTdvTZhc4rCS79zg/viewform?usp=sharing&ouid=113615802769571798148" target="_blank" class="submenu-item">
+                        Sekretariat
+                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScKmPtloqo-t83khU5hJbCfrMk8aQgxLzN4TQ8LWyuo5oyVdw/viewform?usp=sharing&ouid=113615802769571798148" target="_blank" class="submenu-item">
+                        Subbagian Umum
+                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRGF2OQ18fhYgXpI2Mb4RslMy3aGOt1ycphtVr6RxqvY-7OA/viewform?usp=sharing&ouid=113615802769571798148" target="_blank" class="submenu-item">
+                        Bidang Pengelolaan Arsip Daerah Provinsi
+                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScuI4TYgHykdRQRost9_MR8mfQRuKy9lKJVgiC7iSElgoyubA/viewform?usp=sharing&ouid=113615802769571798148" target="_blank" class="submenu-item">
+                        Bidang Perlindungan dan Penyelamatan Arsip
+                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1DaJPY-OlRa4yPlQrHiobkmXDQgEaLQyuw-NTdAWEKdrbjA/viewform?usp=sharing&ouid=113615802769571798148" target="_blank" class="submenu-item">
+                        Bidang Pelestarian Koleksi Nasional dan Pelestarian Naskah Kuno
+                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzxP1aROplpUTRI3VTpO_-533r59LKb1yxItWHLMmuH_ad7w/viewform?usp=sharing&ouid=113615802769571798148" target="_blank" class="submenu-item">
+                        Bidang Pembinaan dan Pengembangan Perpustakaan
+                    </a>
+                </div>
+            </div>
+
+            <!-- Menu Kedua: Data Ketidakhadiran -->
+            <div class="menu-section">
+                <div class="menu-header" onclick="toggleSubmenu('data-menu')">
+                    <h2>Data Ketidakhadiran Pegawai di Kantor</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="submenu" id="data-menu">
+                    <a href="https://docs.google.com/spreadsheets/d/1aSL9B1gyfBSaeE2SNYfgSGF92iD1awYe8xvysnRsuU4/edit?usp=sharing" target="_blank" class="submenu-item">
+                        Bawahan Langsung Kepala Dinas
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/18o6GN8HzrTEv-o29_IiUJWxsjcsEojlK0-vG6wTup_s/edit?usp=sharing" target="_blank" class="submenu-item">
+                        Sekretariat
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1tjif9YkTlU7HMD7L04hdO7VumQu5p5gJmIhfVG6q_yo/edit?usp=sharing" target="_blank" class="submenu-item">
+                        Subbagian Umum
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1yRTZvnVur6RCKt0YWXvTW4cv4wrkWYfcp-qBifHSH00/edit?usp=sharing" target="_blank" class="submenu-item">
+                        Bidang Pengelolaan Arsip Daerah Provinsi
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1lm1j46EqIvr1OxD8TomqVhEh-gYQQfkRtQKFrq5DCOA/edit?usp=sharing" target="_blank" class="submenu-item">
+                        Bidang Perlindungan dan Penyelamatan Arsip
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1qxYd-WAYJ0EUj9oVFcLjxT7etKzG-7jy2pZJlvv0r8Y/edit?usp=sharing" target="_blank" class="submenu-item">
+                        Bidang Pelestarian Koleksi Nasional dan Pelestarian Naskah Kuno
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1mV2A5gVVJZeQnadG6itQMngYOhA4fbNOJUZYayuTc0E/edit?usp=sharing" target="_blank" class="submenu-item">
+                        Bidang Pembinaan dan Pengembangan Perpustakaan
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer dengan kontak WhatsApp -->
+        <footer class="footer">
+            <p class="contact-info">
+                Bila ada kendala, hubungi admin melalui WA : 
+                <a href="https://wa.me/6282179804458" target="_blank" class="whatsapp-link" title="Klik nomor ini untuk menghubungi admin">
+                    082179804458
+                </a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 50%, #90caf9 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.government-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.main-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1976d2;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-bottom: 40px;
+}
+
+.menu-section {
+    margin-bottom: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    overflow: hidden;
+}
+
+.menu-header {
+    background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+    color: white;
+    padding: 20px 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.menu-header:hover {
+    background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(25, 118, 210, 0.3);
+}
+
+.menu-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.toggle-icon {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.menu-header.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
+/* Submenu Styles */
+.submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.submenu.show {
+    max-height: 500px;
+}
+
+.submenu-item {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.submenu-item:last-child {
+    border-bottom: none;
+}
+
+.submenu-item:hover {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    color: #1976d2;
+    transform: translateX(10px);
+    padding-left: 35px;
+}
+
+.submenu-item::before {
+    content: '→';
+    position: absolute;
+    left: 10px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.submenu-item:hover::before {
+    opacity: 1;
+    left: 15px;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.contact-info {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.whatsapp-link {
+    color: #25d366;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: rgba(37, 211, 102, 0.1);
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.whatsapp-link:hover {
+    background: rgba(37, 211, 102, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .main-title {
+        font-size: 24px;
+    }
+    
+    .menu-header h2 {
+        font-size: 18px;
+    }
+    
+    .submenu-item {
+        padding: 12px 20px;
+    }
+    
+    .submenu-item:hover {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 20px;
+    }
+    
+    .app-description {
+        font-size: 14px;
+    }
+    
+    .menu-header {
+        padding: 15px 20px;
+    }
+    
+    .menu-header h2 {
+        font-size: 16px;
+    }
+}
